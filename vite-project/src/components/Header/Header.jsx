@@ -1,22 +1,24 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
 
-export const Header = () => {
+const Header = () => {
     return (
-        <Navbar className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">Home</Navbar.Brand>
-        <Navbar.Brand href="#home">Login</Navbar.Brand>
-        <Navbar.Brand href="#home">Register</Navbar.Brand>
-        <Navbar.Brand href="#home">Cars</Navbar.Brand>
-        <Navbar.Brand href="#home">Add Car</Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            Hello, <a>Mark Otto</a>
-          </Navbar.Text>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      <div className="absolute top-0 left-0 w-full bg-gray-900 py-4 z-100">
+      <div className="px-8">
+        <Link to="/" className="text-white text-lg hover:opacity-20 px-4 py-2">
+          Home
+        </Link>
+        <Link to="/cars" className="text-white text-lg hover:opacity-20 px-4 py-2">
+          Cars
+        </Link>
+        <Link to="/login" className="text-white text-lg hover:opacity-20 px-4 py-2">
+          Login
+        </Link>
+        <Link to="/register" className="text-white text-lg hover:opacity-20 px-4 py-2">
+          Register
+        </Link>
+      </div>
+    </div>
     )
 }
+
+export default Header;
