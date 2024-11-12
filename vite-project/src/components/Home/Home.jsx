@@ -1,13 +1,9 @@
-import Header from "../Header/Header"
+import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (
-      <div className="w-full h-full min-h-screen">
-        <div>
-          <Header />
-        </div>
-
-          <div className="w-full h-screen flex flex-col justify-center items-center text-center bg-slate-500">
+      <div className="w-full h-screen flex flex-col">
+          <div className="flex-grow flex flex-col justify-center items-center text-center bg-slate-500">
           <h1 className="text-4xl font-bold text-black shadow-md">
           Welcome to ReactACar!
           </h1>
@@ -15,6 +11,7 @@ const Home = () => {
           Browse from many cars to rent, or give your own car rented
           </h2>
           </div>
+          <Footer />
       </div>
     )
 }
