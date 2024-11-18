@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Home from './components/home/home';
 import LoginPage from './components/LoginPage/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
+import CarsPage from "./components/CarsPage/CarsPage";
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/cars" element={<CarsPage />} />
       </Routes>
     </Router>
     </div>
