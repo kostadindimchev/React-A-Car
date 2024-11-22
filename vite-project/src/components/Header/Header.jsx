@@ -16,6 +16,9 @@ const Header = () => {
         <Link to="/register" className="text-white text-lg hover:opacity-20 px-4 py-2">
           Register
         </Link>
+        <Link to="/create" className="text-white text-lg hover:opacity-20 px-4 py-2">
+          Add Car
+        </Link>
       </div>
     </div>
     )
