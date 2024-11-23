@@ -12,6 +12,7 @@ const Create = () => {
                             name="make"
                             id="make"
                             placeholder="Make"
+                            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
 
                         <input
@@ -19,6 +20,7 @@ const Create = () => {
                             name="model"
                             id="car-model"
                             placeholder="Model"
+                            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
 
                         <input
@@ -26,6 +28,7 @@ const Create = () => {
                             name="imageUrl"
                             id="car-image"
                             placeholder="Car Image URL"
+                            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
 
                         <textarea
@@ -34,6 +37,7 @@ const Create = () => {
                             placeholder="Description"
                             rows="5"
                             cols="50"
+                            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         ></textarea>
 
                         <input
@@ -41,6 +45,7 @@ const Create = () => {
                             name="year"
                             id="year"
                             placeholder="year"
+                            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
 
                         <button type="submit" className="bg-indigo-500 text-white py-2 rounded-lg hover:bg-indigo-600 transition duration-200">Add</button>
